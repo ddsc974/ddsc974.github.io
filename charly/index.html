@@ -19,16 +19,18 @@
          gap:22px; padding:24px 16px; background:var(--fond); font-family:"Segoe UI", Roboto, Arial, sans-serif; color:var(--texte); }
   .carte { width:100%; max-width:420px; background:linear-gradient(160deg, var(--orange) 0%, var(--orange-fonce) 100%);
            border-radius:18px; padding:22px 22px 20px; box-shadow:0 10px 30px rgba(0,0,0,.18); position:relative; overflow:hidden; }
-  .entete { font-size:12.5px; line-height:1.35; }
+  .haut { display:flex; align-items:center; gap:14px; }
+  .entete { flex:1; min-width:0; font-size:12.5px; line-height:1.35; }
   .entete b { display:block; font-size:14px; font-weight:600; }
-  .nom { margin:22px 0 2px; font-size:30px; font-weight:800; letter-spacing:.3px; }
+  .nom { margin:18px 0 2px; font-size:30px; font-weight:800; letter-spacing:.3px; }
   .titre { font-size:17px; font-weight:700; }
-  .bas { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin-top:22px; }
+  .bas { margin-top:20px; }
   .infos { list-style:none; margin:0; padding:0; font-size:14.5px; line-height:1.45; }
-  .infos li { display:flex; gap:9px; align-items:flex-start; margin-top:6px; }
+  .infos li { display:flex; gap:9px; align-items:flex-start; margin-top:6px; min-width:0; }
+  .infos span, .infos a { min-width:0; overflow-wrap:anywhere; }
   .infos svg { flex:none; width:17px; height:17px; margin-top:2px; fill:var(--texte); }
   .infos a { color:inherit; text-decoration:none; border-bottom:1px solid rgba(0,0,0,.25); }
-  .logo { width:96px; height:96px; flex:none; border-radius:50%; background:#fff; padding:2px; }
+  .logo { width:72px; height:72px; flex:none; border-radius:50%; background:#fff; padding:2px; }
   .ajouter { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; max-width:420px;
              padding:16px; border-radius:14px; background:var(--bleu); color:#fff; font-size:18px; font-weight:700;
              text-decoration:none; box-shadow:0 6px 18px rgba(27,42,94,.3); }
@@ -36,12 +38,15 @@
   .actions { display:flex; gap:10px; width:100%; max-width:420px; }
   .actions a { flex:1; text-align:center; padding:12px; border-radius:12px; background:#fff; color:var(--bleu);
                font-weight:600; text-decoration:none; border:1.5px solid var(--bleu); }
-  @media (max-width:360px) { .nom { font-size:26px; } .logo { width:78px; height:78px; } }
+  @media (max-width:360px) { .nom { font-size:26px; } .logo { width:60px; height:60px; } }
 </style>
 </head>
 <body>
   <main class="carte" aria-label="Carte de visite">
-    <div class="entete">Centre National des Réserves Communales de Sécurité Civile<b>Délégation Départementale de La Réunion</b></div>
+    <div class="haut">
+      <img class="logo" src="../logo-974.png" alt="Logo Réserves communales de sécurité civile La Réunion">
+      <div class="entete">Centre National des Réserves Communales de Sécurité Civile<b>Délégation Départementale de La Réunion</b></div>
+    </div>
     <div class="nom">Charles Curcio</div>
     <div class="titre">Coordinateur Départemental</div>
     <div class="bas">
@@ -53,7 +58,6 @@
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
           <a href="mailto:coordi974@cnrcsc.org">coordi974@cnrcsc.org</a></li>
       </ul>
-      <img class="logo" src="../logo-974.png" alt="Logo Réserves communales de sécurité civile La Réunion">
     </div>
   </main>
   <a class="ajouter" href="charly.vcf" download="Charles Curcio.vcf">
