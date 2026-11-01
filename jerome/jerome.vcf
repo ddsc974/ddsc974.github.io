@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Lassalle;Jérôme;;;
+FN:Jérôme Lassalle
+ORG:CNRCSC - Délégation Départementale de La Réunion
+TITLE:Président
+TEL;TYPE=CELL,VOICE:+262692400189
+EMAIL;TYPE=INTERNET,WORK:president974@cnrcsc.org
+ADR;TYPE=WORK:;;309 bis route du Maïdo - Petite France;Le Guillaume Saint-Paul;;97423;France
+END:VCARD

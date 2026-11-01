@@ -7,6 +7,7 @@ une page par personne, ouverte par un QR code imprimé. On scanne, on voit la ca
 | Personne | Adresse (celle du QR, ne change jamais) |
 |---|---|
 | Charles Curcio | https://ddsc974.github.io/charly/ |
+| Jérôme Lassalle | https://ddsc974.github.io/jerome/ |
 
 ## La règle d'or
 
